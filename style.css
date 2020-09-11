@@ -1,0 +1,185 @@
+.responsive, .responsive-2, .responsive-3, .responsive-4, .responsive-5{
+	height: 500px;
+	text-align: center;
+}
+
+.responsive-2, .responsive-3, .responsive-4, .responsive-5{
+	display:  none;
+}
+/* svg start */
+.abstract-svg-1{
+	position: absolute;
+	bottom: 19%;
+	fill:#FCB320;
+	height: 30px; 
+	width: 30px; 
+	left: 4%;
+	z-index: 9;
+	animation: animationShapeOne 15s infinite linear;
+  }
+  
+  .abstract-svg-2{
+	   fill: #00AEEF;
+	  height: 45px;
+	  width: 45px;
+	  bottom: 89%;
+	  position: absolute;
+	  right: 25%;
+	  z-index: 9;
+	  animation: animationShapeTwo 15s infinite linear;
+  
+  }
+  .abstract-svg-3{
+	fill: #1e266d;
+	height: 35px; 
+	width: 35px; 
+	position: absolute;
+	top: 30%;
+	z-index: 9;
+	animation: rotated 20s infinite linear;
+	left: 3.9%;
+  }
+  
+  .abstract-svg-4{
+	fill: #ffd26a;
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	top: 50%;
+	z-index: 9;
+	animation: rotated 20s infinite linear;
+	right: 5%;
+  }
+  
+  
+  .abstract-svg-5{
+	fill:#59c894;
+	height: 35px; 
+	width: 35px; 
+	position: absolute;
+	top: 120%;
+	z-index: 9;
+	animation: animationShapethree 15s infinite linear;
+	right: 10%;
+  }
+  @keyframes animationShapethree{
+	0% {
+	  transform:  translate(0px,0px)  rotate(0deg) scale(1) ;
+	}
+	20% {
+	  transform:  translate(153px,-50px)  rotate(36deg) scale(0.9);
+	}
+	40% {
+	  transform:  translate(41px,7px)  rotate(72deg) scale(1);
+	}
+	60% {
+	  transform:  translate(93px,150px)  rotate(108deg) scale(1.2);
+	}
+	80% {
+	  transform:  translate(-50px,182px)  rotate(144deg) scale(1.1);
+	}
+	100% {
+	  transform:  translate(-40px,150px)  rotate(0deg) scale(1);
+	}
+  }
+  
+  
+  @keyframes animationShapeTwo{
+	0% {
+	  transform:  translate(0px,0px)  rotate(0deg) scale(1) ;
+	}
+	20% {
+	  transform:  translate(73px,-1px)  rotate(36deg) scale(0.9);
+	}
+	40% {
+	  transform:  translate(141px,72px)  rotate(72deg) scale(1);
+	}
+	60% {
+	  transform:  translate(83px,122px)  rotate(108deg) scale(1.2);
+	}
+	80% {
+	  transform:  translate(-40px,72px)  rotate(144deg) scale(1.1);
+	}
+	100% {
+	  transform:  translate(0px,0px)  rotate(0deg) scale(1);
+	}
+  }
+  
+  
+  @-webkit-keyframes animationShapeOne {
+	0% {
+	  -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
+	}
+	20% {
+	  -webkit-transform:  translate(73px,-1px)  rotate(36deg) ;
+	}
+	40% {
+	  -webkit-transform:  translate(141px,72px)  rotate(72deg) ;
+	}
+	60% {
+	  -webkit-transform:  translate(83px,122px)  rotate(108deg) ;
+	}
+	80% {
+	  -webkit-transform:  translate(-40px,72px)  rotate(144deg) ;
+	}
+	100% {
+	  -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
+	}
+  }
+  
+  @-webkit-keyframes rotated {
+	0%   {-webkit-transform: rotate(0);transform: rotate(0);}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+  }
+  @keyframes rotated {
+	0%   {-webkit-transform: rotate(0);transform: rotate(0);}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+  }
+/* svg end */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.responsive-2, .responsive-3, .responsive, .responsive{
+		display:  none;
+	}
+	.responsive-5{
+		display: block;
+	}
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.responsive, .responsive-3, .responsive, .responsive-5{
+		display:  none;
+	}
+	.responsive-2{
+		display: block;
+	}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.responsive-2, .responsive, .responsive, .responsive-5{
+		display:  none;
+	}
+	.responsive-3{
+		display: block;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.responsive-2, .responsive-3, .responsive, .responsive-5{
+		display:  none;
+	}
+	.responsive-4{
+		display: block;
+	}
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.responsive-2, .responsive-3, .responsive-4, .responsive-5{
+		display:  none;
+	}
+}
